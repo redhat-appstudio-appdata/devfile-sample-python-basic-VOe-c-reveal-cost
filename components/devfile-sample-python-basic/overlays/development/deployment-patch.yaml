@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hmariset-tenant/devfile-sample-python-basic/devfile-sample-python-basic@sha256:317ea1f51a7d135c1ab60f77dfedc3926f0b493b3d0974cce7f58192c8df1d32
+        name: my-python
+        resources: {}
+status: {}
